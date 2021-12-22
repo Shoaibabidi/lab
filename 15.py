@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import cep.csv
+import sklearn
 
 st.title("Student Enrollment Data")
 save_data = st.button("Save")
