@@ -3,7 +3,7 @@ import pandas as pd
 
 st.title("Student Enrollment Data")
 save_data = st.button("Save")
-df = pd.read_csv("cep.csv")
+df = pd.read_csv("lab/cep.csv")
 st.write(df)
 
 st.sidebar.header("Enroll")
@@ -17,6 +17,6 @@ if add_data:
     new_data = {"Name": user_Name, "ID": int(user_ID), "Department": user_Department}
     df = df.append(new_data, ignore_index=True)
     result = df.sort_values('Department')
-    result.to_csv("cep.csv", index=False)
+    result.to_csv("lab/cep.csv", index=False)
 
 
