@@ -19,5 +19,3 @@ if add_data:
     df = df.append(new_data, ignore_index=True)
     result = df.sort_values('Department')
     result.to_csv("app/lab/cep.csv", index=False)
-
-
